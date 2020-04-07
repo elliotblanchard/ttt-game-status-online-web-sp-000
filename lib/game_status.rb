@@ -26,10 +26,11 @@ end
 def full?(board)
   return_value = true
   board.each do |index|
-    #puts "Index is #{index}"
     if (index.nil? || index == " ")
       return_value = false
     end
   end
   return return_value
 end
+
+def draw?(board)
