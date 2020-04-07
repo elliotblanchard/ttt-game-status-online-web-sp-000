@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.any? do |win_state|
-    if (win_state.all? {|index| position_taken?(board,index)}) && (win_state.all? {|index| index=="X"} || win_state.all? {|index| index=="O"})
+    if (win_state.all? {|index| position_taken?(board,index)}) && (win_state.all? {|index| index == "X"} || win_state.all? {|index| index == "O"})
       return win_state
     end
   end
