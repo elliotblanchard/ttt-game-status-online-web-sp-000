@@ -26,8 +26,8 @@ end
 def full?(board)
   return_value = true
   board.each do |index|
-    puts "Index is #{index}"
-    if !position_taken?(board, index.to_i)
+    #puts "Index is #{index}"
+    if (index.nil? || index == " ")
       return_value = false
     end
   end
