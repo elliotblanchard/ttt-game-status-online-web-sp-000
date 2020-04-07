@@ -47,5 +47,5 @@ end
 
 def winner(board)
   #puts won?(board)
-  return won?(board)
+  return board[won?(board)[0]]
 end
