@@ -24,9 +24,11 @@ def won?(board)
 end
 
 def full?(board)
-  if board.all? {|index| position_taken?(board,index)} 
-    return false
-  else
-    return false
+  return_value = true
+  board.each do |index|
+    if !position_taken?(board, index)
+      return_value = false
+    end
   end
+  return return_value
 end
