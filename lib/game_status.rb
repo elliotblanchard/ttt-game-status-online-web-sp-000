@@ -46,5 +46,6 @@ def over?(board)
 end
 
 def winner?(board)
-  return won?(board)[0]
+  puts won?(board)
+  #return won?(board)[0]
 end
